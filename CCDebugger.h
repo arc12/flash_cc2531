@@ -7,11 +7,17 @@
 #define CC_ERROR_NOT_DEBUGGING  2
 #define CC_ERROR_NOT_WIRED      3
 
+// pins for RPi v1 - ARC July 2023
+#define PIN_RST 7 // = BCM 4, Pi v1 header 7
+#define PIN_DC  2  // = BCM 27, Pi v1 header 13 ; DC = P2.2
+#define PIN_DD 0  // = BCM 17, Pi v1 header 11; DD = P2.1
+// (adjacent is GND at header 9 and 3.3V at header 17, although I propose to power via USB is available)
+
 // defaŭltaj valoroj por pingloj
 // por restarigi al pinglo 35, DC al pinglo 36, DD al pinglo 38
-#define PIN_RST 24
-#define PIN_DC  27
-#define PIN_DD 28
+//#define PIN_RST 24
+//#define PIN_DC  27
+//#define PIN_DD 28
 
 // alternativaj valoroj por pingloj
 // por restarigi al pinglo 3, DC al pinglo 11, DD al pinglo 13
